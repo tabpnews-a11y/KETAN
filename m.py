@@ -200,7 +200,7 @@ def send_welcome(message):
 
     markup.add(btn1, btn2, btn3, btn4)
 
-    bot.send_message(message.chat.id, "*🔆 WELCOME TO VIP LSR DDOS BOT 🔆*", reply_markup=markup, parse_mode='Markdown')
+    bot.send_message(message.chat.id, "*🔆 WELCOME TO @BGMIHACKPAIDTY DDOS BOT 🔆*", reply_markup=markup, parse_mode='Markdown')
 
 
 @bot.message_handler(func=lambda message: True)
@@ -210,11 +210,11 @@ def handle_message(message):
         return
 
     if message.text == "Buy Access! 💰":
-        bot.reply_to(message, "* 𝗩𝗜𝗣 𝗗𝗗𝗢𝗦 𝗣𝗥𝗜𝗖𝗘\n\n[𝗣𝗿𝗲𝗺𝗶𝘂𝗺]\n> DAY - 200 INR\n> WEEK - 700 INR\n\n[𝗣𝗹𝗮𝘁𝗶𝗻𝘂𝗺]\n> MONTH - 1600 INR\n\nDM TO BUY *", parse_mode='Markdown')
+        bot.reply_to(message, "* BGMIHACKPAIDTY 𝗗𝗗𝗢𝗦 𝗣𝗥𝗜𝗖𝗘\n\n[𝗣𝗿𝗲𝗺𝗶𝘂𝗺]\n> DAY - 200 INR\n> WEEK - 700 INR\n\n[𝗣𝗹𝗮𝘁𝗶𝗻𝘂𝗺]\n> MONTH - 1600 INR\n\nDM TO BUY *", parse_mode='Markdown')
     elif message.text == "Attack 🚀":
         attack_command(message)
     elif message.text == "Rules 🔰":
-        bot.send_message(message.chat.id, "*🔆 𝐕𝐈𝐏 𝐃𝐃𝐎𝐒 𝐑𝐔??𝐄𝐒 🔆\n\n1. Do ddos in 3 match after play 2 match normal or play 2 tdm match\n2. Do less then 80kills to avoid ban\n3. Dont Run Too Many Attacks !! Cause A Ban From Bot\n4. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot\n5. After 1 or 2 match clear cache of your game \n\n🟢 FOLLOW THIS RULES TO AVOID 1 MONTH BAN 🟢*", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*🔆 BGMIHACKPAIDTY 𝐃𝐃𝐎𝐒 𝐑𝐔??𝐄𝐒 🔆\n\n1. Do ddos in 3 match after play 2 match normal or play 2 tdm match\n2. Do less then 80kills to avoid ban\n3. Dont Run Too Many Attacks !! Cause A Ban From Bot\n4. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot\n5. After 1 or 2 match clear cache of your game \n\n🟢 FOLLOW THIS RULES TO AVOID 1 MONTH BAN 🟢*", parse_mode='Markdown')
     elif message.text == "My Info ℹ️":
         user_id = message.from_user.id
         user_data = users_collection.find_one({"user_id": user_id})
